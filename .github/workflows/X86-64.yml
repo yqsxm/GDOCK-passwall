@@ -99,10 +99,10 @@ jobs:
         make -j$(nproc) V=s
  
  ######把上面生成的.config文件拷贝到bin/targets/x86/64/my.config，从而在下载固件时，一起下载回来。
-    - name: Copy .config  to  ./bin/targets/x86/64/my.config
-      run: |
-        cd lede
-        cp  .config   ./bin/targets/x86/64/my.config  
+ #   - name: Copy .config  to  ./bin/targets/x86/64/my.config
+ #     run: |
+ #       cd lede
+ #       cp  .config   ./bin/targets/x86/64/my.config  
    
    
     - name : Upload artifact
